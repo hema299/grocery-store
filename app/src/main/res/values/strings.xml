@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GroceryStore</string>
+    <string name="Money">Money</string>
+    <string name="mony">Entermoney</string>
+    <string name="tiplabl">Tiprate</string>
+    <string name="taxr">Taxrate</string>
+    <string name="taxprcnt">10%</string>
+    <string name="itm1">Item1price</string>
+    <string name="weight1">Weight</string>
+    <string name="weght1">10%</string>
+    <string name="itm2">Item2price</string>
+    <string name="wght2">Weight</string>
+    <string name="itm3">Item3price</string>
+    <string name="totamnt">Totalamount</string>
+    <string name="tottax">TotalTax</string>
+    <string name="chnge">Change</string>
+    <string name="whgt1">weight(kg)</string>
+    <string name="whytkg">0</string>
+    <string name="tottaxx">Tax</string>
+    <string name="newwght">weight(kg)</string>
+    <string name="totl">Total</string>
+    <string name="mny">Money</string>
+    <string name="grcrydigts">0123456789</string>
+    <string name="itemprice">Itemprice</string>
+    <string name="itmp">itmprice</string>
+    <string name="whytkg1">weight.kg</string>
+</resources>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hemah.grocerystore.MainActivity"
+    android:columnCount="4"
+    android:rowCount="6"
+    android:useDefaultMargins="true">
+
+    <EditText
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/MoneyeditText"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5"
+        android:digits="@string/grcrydigts"
+        android:maxLength="@integer/maxl"
+        android:background="@color/grcrycolorr" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/taxr"
+        android:id="@+id/taxratetextView"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/AmounttextView"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:hint="@string/mny"
+        android:focusable="false"
+        android:layout_columnWeight="1.5"
+        android:padding="@dimen/grcrypadng"
+        android:elevation="@dimen/grcryelevtn"
+        android:background="@color/grcryamnttxt"
+        android:layout_gravity="fill_horizontal" />
+
+    <SeekBar
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="@dimen/grcrylyouthyt"
+        android:id="@+id/taxseekBar"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:layout_columnWeight="1.25"
+        android:max="@integer/maxsek"
+        android:progress="@integer/progress" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/taxprcnt"
+        android:id="@+id/taxpercenttextView"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_columnWeight="0.75"
+        android:layout_gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/item1edittext"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5"
+        android:digits="@string/grcrydigts"
+        android:background="@color/grcrycolorr"
+        android:maxLength="@integer/maxl" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/item1textView"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:hint="@string/itmp"
+        android:layout_columnWeight="1.5"
+        android:background="@color/grcrycolorr"
+        android:elevation="@dimen/grcryelevtn"
+        android:padding="@dimen/grcrypadng"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg1"
+        android:id="@+id/weight1textView"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg"
+        android:id="@+id/weight1numtextView"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_columnWeight=".75"
+        android:layout_gravity="center_vertical" />
+
+    <SeekBar
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="@dimen/grcrylyouthyt"
+        android:id="@+id/weight1seekBar"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1.25"
+        android:max="@integer/maxsek"
+        android:progress="@integer/wghtprogess" />
+
+    <EditText
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/item2editText"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5"
+        android:digits="@string/grcrydigts"
+        android:background="@color/grcrycolorr"
+        android:maxLength="@integer/maxl" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/item2textView"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:hint="@string/itmp"
+        android:layout_columnWeight="1.5"
+        android:background="@color/grcrycolorr"
+        android:elevation="@dimen/grcryelevtn"
+        android:padding="@dimen/grcrypadng"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg1"
+        android:id="@+id/weight2textView"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg"
+        android:id="@+id/weight2numtextView"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_columnWeight=".75"
+        android:layout_gravity="center_vertical" />
+
+    <SeekBar
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="@dimen/grcrylyouthyt"
+        android:id="@+id/weight2seekBar"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:layout_columnWeight="1.25"
+        android:progress="@integer/wghtprogess"
+        android:max="@integer/maxsek" />
+
+    <EditText
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/item3editText"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5"
+        android:maxLength="@integer/maxl"
+        android:digits="@string/grcrydigts" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/itm3textView"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:hint="@string/itmp"
+        android:layout_columnWeight="1.5"
+        android:background="@color/grcrycolorr"
+        android:padding="@dimen/grcrypadng"
+        android:elevation="@dimen/grcryelevtn"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg1"
+        android:id="@+id/weight3textView"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/whytkg"
+        android:id="@+id/wght3numtextView"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_columnWeight=".75"
+        android:layout_gravity="center_vertical" />
+
+    <SeekBar
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="@dimen/grcrylyouthyt"
+        android:id="@+id/weight3seekBar"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:indeterminate="false"
+        android:layout_columnWeight="1.25"
+        android:max="@integer/maxsek"
+        android:progress="@integer/wghtprogess" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/totl"
+        android:id="@+id/totalamountlabeltextView"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totalamounttextView"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25"
+        android:background="@color/grcrycolor"
+        android:gravity="center"
+        android:padding="@dimen/grcrypadng"
+        android:elevation="@dimen/grcryelevtn"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/tottaxx"
+        android:id="@+id/totaltaxlabeltextView"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:layout_columnWeight=".75" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totTaxtextView"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:layout_columnWeight="1.25"
+        android:background="@color/grcrycolor"
+        android:elevation="@dimen/grcryelevtn"
+        android:gravity="center"
+        android:padding="@dimen/grcrypadng"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/chnge"
+        android:id="@+id/changelabeltextView"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnWeight="1.5" />
+
+    <TextView
+        android:layout_width="@dimen/layoutwidth"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/changetextView"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_columnWeight="1.25"
+        android:background="@color/grcrycolor"
+        android:padding="@dimen/grcrypadng"
+        android:gravity="center"
+        android:elevation="@dimen/grcryelevtn"
+        android:layout_gravity="fill_horizontal" />
+</GridLayout>
